@@ -1,0 +1,85 @@
+﻿
+/* Kích thước theo màn hình Mobile-First
+max-width: 320px (điện thoại di động, hiển thị chiều dọc)
+max-width: 480px (điện thoại di động, hiển thị chiều ngang)
+max-width: 600px (máy tính bảng, hiển thị chiều dọc)
+max-width: 800px (máy tính bảng, hiển thị chiều ngang)
+max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)
+max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang)
+min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).
+*/
+
+/*================= Kích thước theo màn hình PC-First ====================*/
+@media (min-width: 1170px){
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1169px){
+	* {
+		margin: 0;
+		padding: 0;
+	}
+}
+@media (max-width: 992px){
+	* {
+		margin: 0;
+		padding: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	* {
+		margin: 0;
+		padding: 0;
+	}
+		.rps img{
+		    width: 227px !important;
+		    margin-top: -133px !important;
+		}
+}
+@media (max-width: 320px){
+	* {
+		margin: 0;
+		padding: 0;
+	}
+}
+@media (max-width: 768px){
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.k-header-wrap .k-header-info li, .k-header-wrap .k-header-info .button-cod .btn-cod-active {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 480px){
+	* {
+		margin: 0;
+		padding: 0;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	* {
+		margin: 0;
+		padding: 0;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.anh {
+		display: none;
+	}
+	.txt {
+		padding-top: 0;
+		height: auto;
+	}
+	.txt p {
+		width: 100%;
+	}
+}

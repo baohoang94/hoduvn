@@ -1,0 +1,11 @@
+Options -Indexes
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
+RewriteEngine on
+RewriteRule ^index.html$ index.php
+RewriteRule ^blog.html$ blog.php
+RewriteRule ^blog-tin-tuc/([a-z0-9-+.()]+)-([0-9]+).html$ blog-detail.php?title=$1&id=$2
+RewriteRule ^danh-sach-khoa-hoc.html course.php
+RewriteRule ^khoa-hoc/([a-z0-9-+.()]+)/([0-9]+).html$ detail.php?ten_khoa_hoc=$1&makh=$2
+RewriteRule ^danh-sach-khoa-hoc/([a-zA-Z-]+)$ course.php?cuthe=$1
+RewriteRule ^([a-z0-9-+()]+)-([0-9]+).html$ profile.php?ten_trung_tam=$1&matt=$2

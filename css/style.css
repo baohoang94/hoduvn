@@ -1,0 +1,119 @@
+@font-face {
+	font-family: hodu;
+	src:url('../fonts/helveticaneue.ttf');
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: hodu;
+}
+.ht {
+	text-align: center;
+    font-size: 36px;
+    margin: 22px 0;
+    font-weight: 300;
+}
+.anh {
+	position: relative;
+}
+.anh1, .anh2, .anh3 {
+	position: absolute;
+	width: 60px;
+	height: 3px;
+    top: 50%;
+}
+.anh1 {
+	left: calc(100% - 60px);
+	background: #f2604c;
+}
+.anh2 {
+	right: calc(100% - 60px);
+	background: #fed20d;
+}
+.anh3 {
+	left: calc(100% - 60px);
+	background: #a4ddef;
+}
+
+.anh img {
+	height: 500px;
+}
+
+.fright {
+	float: right;
+}
+.tright {
+	text-align: right;
+}
+
+.txt {
+	height: 500px;
+	vertical-align: middle;
+	display: block;
+	padding-top: 200px;
+}
+
+.f3 {
+	background-color: #f3f3f3;
+}
+.hidd {
+	height: 120px;
+	overflow: hidden;
+}
+
+.cms {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	top: 100%;
+	transition: .4s;
+}
+.box:hover .cms {
+	opacity: .8;
+	visibility: visible;
+	top: 0;
+}
+.box span {
+	transition: .8s;
+	opacity: 1;
+	visibility: visible;
+}.box:hover span.andi {
+	opacity: 0;
+	visibility: hidden;
+	top: 0;
+}
+#ngoaingu, #cntt, #design, #mkt, #kinhdoanh {
+	background: url('../images/nn.jpg');
+	background-size: cover !important;
+}
+#cntt {
+	background: url('../images/cntt.jpg');
+}
+#design {
+	background: url('../images/design.png');
+}
+#mkt {
+	background: url('../images/mkt.png');
+}
+#kinhdoanh {
+	background: url('../images/kinhdoanh.jpg');
+}
+
+/* css for pagination */
+.text-center {
+	text-align: center;
+}
+/* css for add-course */
+.textfullwidth {
+    width: 100%;
+    height: 100px;
+    /*resize: none;*/
+}
+
